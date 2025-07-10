@@ -9,7 +9,7 @@ def hitung_per_kategori(data):
 
 def tampilkan_per_kategori(data):
     kategori_total = hitung_per_kategori(data)
-    print("\n=== Pengeluaran per Kategori ===")
+    print("Pengeluaran per Kategori:")
     for kategori, total in kategori_total.items():
         print(f"{kategori}: Rp{total}")
     print()

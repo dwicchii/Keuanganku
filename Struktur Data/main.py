@@ -1,12 +1,12 @@
 from data_manager import load_data, save_data
-from transaksi import catat_transaksi, tampilkan_laporan, tampilkan_semua, update_transaksi, hapus_transaksi
+from transaksi import catat_transaksi, tampilkan_laporan, update_transaksi, hapus_transaksi
 from kategori import tampilkan_per_kategori
 
 def main():
     data = load_data()
     
     while True:
-        print("=== Aplikasi Manajemen Keuangan ===")
+        print(" Aplikasi Manajemen KeuanganKu: ")
         print("1. Catat Transaksi")
         print("2. Tampilkan Laporan")
         print("3. Tampilkan Pengeluaran per Kategori")

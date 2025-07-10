@@ -25,7 +25,7 @@ def tampilkan_laporan(data):
     print(f"Saldo Akhir: Rp{total_masuk - total_keluar}\n")
 
 def tampilkan_semua(data):
-    print("\n=== Daftar Transaksi ===")
+    print("Daftar Transaksi: ")
     for i, transaksi in enumerate(data):
         print(f"{i}. {transaksi['tanggal']} | {transaksi['jenis']} | Rp{transaksi['jumlah']} | {transaksi['kategori']}")
     print()
