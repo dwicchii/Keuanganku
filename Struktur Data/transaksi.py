@@ -49,7 +49,11 @@ def update_transaksi(data):
 
 def hapus_transaksi(data):
     tampilkan_semua(data)
-    nomor_transaksi = int(input("Pilih nomor transaksi yang ingin dihapus: "))
+    print("ketik q untuk keluar")
+    pilihan = str(input("Pilih nomor transaksi yang ingin dihapus: "))
+    if pilihan == 'q':
+        return
+    nomor_transaksi = int(pilihan)
     if 0 <= nomor_transaksi < len(data):
         data.pop(nomor_transaksi)
         print("Transaksi berhasil dihapus.\n")
