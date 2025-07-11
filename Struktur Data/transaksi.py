@@ -20,9 +20,9 @@ def tampilkan_laporan(data):
     total_keluar = sum(int(d['jumlah']) for d in data if d['jenis'] == 'pengeluaran')
 
     print(" Laporan Keuangan ")
-    print(f"Total Pemasukan: Rp{total_masuk}")
-    print(f"Total Pengeluaran: Rp{total_keluar}")
-    print(f"Saldo Akhir: Rp{total_masuk - total_keluar}\n")
+    print(f"Total Pemasukan     : Rp{total_masuk}")
+    print(f"Total Pengeluaran   : Rp{total_keluar}")
+    print(f"Saldo Akhir         : Rp{total_masuk - total_keluar}\n")
 
 def tampilkan_semua(data):
     print("Daftar Transaksi: ")
@@ -32,7 +32,11 @@ def tampilkan_semua(data):
 
 def update_transaksi(data):
     tampilkan_semua(data)
-    nomor_transaksi = int(input("Pilih nomor transaksi yang ingin diubah: "))
+    print("ketik q untuk keluar")
+    pilihan = str(input("Pilih nomor transaksi yang ingin diubah: "))
+    if pilihan == 'q':
+        return
+    nomor_transaksi = int(pilihan)
     if 0 <= nomor_transaksi < len(data):
         print("Masukkan data baru:")
         data[nomor_transaksi]['tanggal'] = input("Tanggal: ")

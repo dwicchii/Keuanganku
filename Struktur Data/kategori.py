@@ -11,5 +11,5 @@ def tampilkan_per_kategori(data):
     kategori_total = hitung_per_kategori(data)
     print("Pengeluaran per Kategori:")
     for kategori, total in kategori_total.items():
-        print(f"{kategori}: Rp{total}")
+        print(f"{kategori}      : Rp{total}")
     print()
