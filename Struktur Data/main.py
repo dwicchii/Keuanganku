@@ -13,7 +13,7 @@ def main():
         print("4. Update Transaksi")
         print("5. Hapus Transaksi")
         print("0. Keluar")
-        pilihan = input("Pilih menu (1/2/3/4): ")
+        pilihan = input("Pilih menu (1/2/3/4/5/0): ")
 
         if pilihan == '1':
             catat_transaksi(data)
